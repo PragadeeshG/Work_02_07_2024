@@ -1,0 +1,15 @@
+create table if not exists kafka_cluster(
+system_id Integer not null,
+distributed_indicator varchar(255) null,
+big_data char null,
+replication_factor Integer null,
+number_of_copies varchar(255) null,
+total_topics varchar(255) null,
+partition_count varchar(255) null,
+synchronize_data varchar(255) null,
+in_sync_replica varchar(255) null,
+zookeeper_ip_address Integer null,
+zookeeper_host varchar(255) null,
+zookeeper_port varchar(255) null,
+leader varchar(255) null,
+constraint kafka_cluster_pk primary key(system_id));

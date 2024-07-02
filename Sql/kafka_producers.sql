@@ -1,0 +1,16 @@
+create table if not exists kafka_producers(
+cluster_id Integer not null,
+producer_type Integer null,
+data_type varchar(255) null,
+data_isolation varchar(255) null,
+data_filter varchar(255) null,
+single_cluster varchar(255) null,
+multi_cluster varchar(255) null,
+single_datacenter varchar(255) null,
+multi_data_center varchar(255) null,
+mirror_maker varchar(255) null,
+cluster_aggregate varchar(255) null,
+end_point varchar(255) null,
+vpn_details varchar(255) null,
+direct_connect varchar(255) null,
+constraint kafka_producers_pk primary key(cluster_id));
